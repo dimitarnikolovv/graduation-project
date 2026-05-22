@@ -127,7 +127,7 @@
 				{entry.transactionId}
 			</a>
 		{:else}
-			—
+			-
 		{/if}
 	</Table.Cell>
 

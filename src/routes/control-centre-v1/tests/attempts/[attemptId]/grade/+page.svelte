@@ -47,7 +47,7 @@
 	// ============================================================================
 
 	function formatDate(date: Date | string | null): string {
-		if (!date) return '—';
+		if (!date) return '-';
 
 		const df = new DateFormatter('bg-BG', {
 			day: '2-digit',

@@ -74,7 +74,7 @@
 	 * Formats a date to a readable string.
 	 */
 	function formatDate(date: Date | string | null): string {
-		if (!date) return '—';
+		if (!date) return '-';
 		const d = new Date(date);
 		return d.toLocaleDateString('bg-BG', {
 			day: '2-digit',

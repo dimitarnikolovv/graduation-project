@@ -87,13 +87,13 @@ export function formatSecondsDuration(seconds: number, fallback: string = 'Ве�
  *
  * @param startDate - The start date
  * @param endDate - The end date
- * @param fallback - Value to return if either date is null/undefined (default: '—')
+ * @param fallback - Value to return if either date is null/undefined (default: '-')
  * @returns Formatted duration string (e.g., "1 час 23 минути 45 секунди")
  */
 export function formatDateDuration(
 	startDate: Date | null | undefined,
 	endDate: Date | null | undefined,
-	fallback: string = '—'
+	fallback: string = '-'
 ): string {
 	if (!startDate || !endDate) return fallback;
 

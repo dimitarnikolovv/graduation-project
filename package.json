@@ -17,6 +17,7 @@
 		"lint": "prettier --check . && eslint .",
 		"db:start": "docker compose up",
 		"db:push": "drizzle-kit push",
+		"db:dbml": "tsx ./src/lib/server/db/dbml.ts",
 		"db:migrate": "drizzle-kit migrate",
 		"db:studio": "drizzle-kit studio",
 		"migrator": "tsx src/lib/server/migrator/index.ts"
@@ -37,6 +38,7 @@
 		"@types/react": "^19.2.13",
 		"bits-ui": "^2.15.5",
 		"clsx": "^2.1.1",
+		"drizzle-dbml-generator": "^0.10.0",
 		"drizzle-kit": "^0.31.9",
 		"embla-carousel-svelte": "^8.6.0",
 		"eslint": "^9.39.2",
