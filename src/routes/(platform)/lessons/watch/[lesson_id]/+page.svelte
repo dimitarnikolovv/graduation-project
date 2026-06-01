@@ -242,6 +242,7 @@
 							{#if !expandDescription}
 								<div class="relative">
 									<RenderStyledHtml class="max-w-7xl!">
+										<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 										{@html data.lesson.content.slice(0, 1000)}
 									</RenderStyledHtml>
 
@@ -255,6 +256,7 @@
 								</div>
 							{:else}
 								<RenderStyledHtml class="max-w-7xl!">
+									<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 									{@html data.lesson.content}
 								</RenderStyledHtml>
 
@@ -264,6 +266,11 @@
 									</Button>
 								</div>
 							{/if}
+						{:else}
+							<RenderStyledHtml class="max-w-7xl!">
+								<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+								{@html data.lesson.content}
+							</RenderStyledHtml>
 						{/if}
 					</section>
 				{/if}
